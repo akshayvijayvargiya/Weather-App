@@ -38,7 +38,7 @@ const handleSearch = value => {
 }
 const handleTextDebounce = useCallback(debounce(handleSearch, 1200), []);
 const {current, location} = weather;
-const localTime = location?.localtime.split(" "); // Using space as the delimiter
+//const localTime = location?.localtime.split(" "); // Using space as the delimiter
 
 
     return(
@@ -124,7 +124,7 @@ const localTime = location?.localtime.split(" "); // Using space as the delimite
 
                         <View className="flex-row space-x-2 items-center">
                             <Image source={require('../assets/sun.png')} className="h-8 w-8" />
-                            <Text className="text-white font-semibold text-base">{localTime[1]}</Text>
+                            <Text className="text-white font-semibold text-base">6:00 AM</Text>
                         </View>
                     </View>
 
